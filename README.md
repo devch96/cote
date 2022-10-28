@@ -1,1 +1,2 @@
 # cote
+Pythonic
