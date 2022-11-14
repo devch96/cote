@@ -1,10 +1,9 @@
 from collections import deque
 def solution(k, dungeons):
-    process = deque()
-    process.append([k,[]])
+    process = deque([[k, []]])
     answer = 0
     while process:
-        cur,passed = process.popleft()
+        cur, passed = process.popleft()
         for i in range(len(dungeons)):
             [least , use] = dungeons[i]
             if i not in passed and cur >= least and cur - use >= 1:
