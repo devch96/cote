@@ -1,5 +1,6 @@
 Xa, Ya, Xb, Yb, Xc, Yc = map(int,input().split())
 answer = 0.0
+#기울기 비교(나눗셈은 런타임 에러 가능))
 if ((Xa-Xb)*(Ya-Yc)==(Ya-Yb)*(Xa-Xc)):
     print(-1.0)
     exit(0)
