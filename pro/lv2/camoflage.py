@@ -1,4 +1,4 @@
-from collections import counter
+from collections import Counter
 def solution(clothes):
     kinds = Counter(list(zip(*clothes))[1])
     answer = 1
