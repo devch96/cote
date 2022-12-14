@@ -1,3 +1,4 @@
+#재귀의 귀재
 import sys
 input = sys.stdin.readline
 def palin(str, l, r):
