@@ -6,10 +6,11 @@ for i in range(1,T+1):
     nums = list(map(int,input().split()))
     result = 0
     for num in nums:
-        if result == 0 or result == 1:
-            result += num
-        elif num == 0:
+        if result == 0 :
             result += num
         else:
-            result *= num
+            if result+num > result*num:
+                result += num
+            else:
+                result *= num
     print(f'#{i} {result}')
